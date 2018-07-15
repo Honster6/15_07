@@ -24,6 +24,12 @@ class FarenheitTest {
         // then
         assertEquals(30, result);
     }
+    @Test
+    public void shouldReturnExceptionWhenTemperatureIsTooLow() {
+
+    }
+
+
 
 
 

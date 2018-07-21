@@ -18,15 +18,16 @@ class FIzzbuzzmockTest {
         // then
         assertEquals("Fizz", result);
     }
-@Test
-    public void shouldReturn4For4() {
+
+    @Test
+    public void shouldReturnBuzzFor5() {
         // given
         FIzzbuzzmock mock = mock(FIzzbuzzmock.class);
-        when(mock.fizzBuzz(4)).thenReturn("4");
+        when(mock.fizzBuzz(5)).thenReturn("Buzz");
         // when
-        String result = mock.fizzBuzz(4);
+        String result = mock.fizzBuzz(5);
         // then
-        assertEquals("4", result);
+        assertEquals("Buzz", result);
     }
 
     @Test
@@ -38,6 +39,17 @@ class FIzzbuzzmockTest {
         String result = mock.fizzBuzz(15);
         // then
         assertEquals("FizzBuzz", result);
+    }
+
+    @Test
+    public void shouldReturnNumberForOtherThan3Or5Or15() {
+        // given
+        FIzzbuzzmock mock = mock(FIzzbuzzmock.class);
+        when(mock.fizzBuzz(4)).thenReturn("4");
+        // when
+        String result = mock.fizzBuzz(4);
+        // then
+        assertEquals("4", result);
     }
 
 

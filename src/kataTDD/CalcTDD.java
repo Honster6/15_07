@@ -13,8 +13,6 @@ public class CalcTDD {
                 sum = sum + x;
             }
             return sum;
-
-
         }
     }
 }

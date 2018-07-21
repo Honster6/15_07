@@ -29,10 +29,20 @@ class CalcTDDTest {
         // given
         CalcTDD calculator = new CalcTDD();
         // when
+        int result = calculator.add("3,2");
+        // then
+        assertEquals(5, result);
+    }
+    @Test
+    public void shouldReturnSumForAnyAmountOfNumbers() {
+        // given
+        CalcTDD calculator = new CalcTDD();
+        // when
         int result = calculator.add("3,2,4,5");
         // then
         assertEquals(14, result);
     }
+
 
 
 

@@ -50,6 +50,14 @@ class CalcTDDTest {
         int result = calculator.add("3,2\n4,5");
         // then
         assertEquals(14, result);
+    }@Test
+    public void shouldReturnSumForAnyAmountOfNumbersWithUsersSeparator() {
+        // given
+        CalcTDD calculator = new CalcTDD();
+        // when
+        int result = calculator.add("3,2\n4,5");
+        // then
+        assertEquals(14, result);
     }
 
 
